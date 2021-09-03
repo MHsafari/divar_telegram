@@ -10,9 +10,9 @@ import requests
 import os
 import time
 import telegram
-import csv
 import json
 import jdatetime
+import csv
 
 f = open("data.json")
 data = json.load(f)
@@ -276,5 +276,5 @@ while True:
 
         # time.sleep(5)
 
-    except:
-        print('Error')
+    except KeyboardInterrupt:
+        break
